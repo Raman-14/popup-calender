@@ -1,0 +1,28 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <form action="">
+                <label for="start-date">start date</label>
+                <input type="date" id="start-date">
+                <label for="end
+                ">end date</label>
+                <input type="date" id="end-date">
+                <button type="submit" > <a href="http://localhost:8000/export?start_date=VALUE&end_date=VALUE" target="_blank">submit</a></button>
+            </form>
+        </div>
+    </div>
+    <button onclick="togglePopup()">show popup</button>
+    <script src="app.js"></script>
+   </body>
+   </html> 
